@@ -1,0 +1,64 @@
+INICIO
+    Mostrar título "Calculadora Enciso"
+    Ir a CALCULADORA
+
+CALCULADORA:
+    Limpiar pantalla
+    Mostrar opciones:
+        1.- Sumar
+        2.- Restar
+        3.- Multiplicar
+        4.- Dividir
+        5.- Inicio
+    Leer operación del usuario en "operacion"
+
+    SI operacion == 1 ENTONCES Ir a SUMAR
+    SI operacion == 2 ENTONCES Ir a RESTAR
+    SI operacion == 3 ENTONCES Ir a MULTIPLICAR
+    SI operacion == 4 ENTONCES Ir a DIVIDIR
+    SI operacion == 5 ENTONCES Ir a MENU
+    EN OTRO CASO Ir a CALCULADORA
+
+SUMAR:
+    Limpiar pantalla
+    Mostrar "Sumar"
+    Pedir al usuario el primer número y guardar en "num1"
+    Pedir al usuario el segundo número y guardar en "num2"
+    Calcular solución = num1 + num2
+    Mostrar "La solución es [solución]"
+    Esperar un momento
+    Ir a CALCULADORA
+
+RESTAR:
+    Limpiar pantalla
+    Mostrar "Restar"
+    Pedir al usuario el primer número y guardar en "num1"
+    Pedir al usuario el segundo número y guardar en "num2"
+    Calcular solución = num1 - num2
+    Mostrar "La solución es [solución]"
+    Esperar un momento
+    Ir a CALCULADORA
+
+MULTIPLICAR:
+    Limpiar pantalla
+    Mostrar "Multiplicar"
+    Pedir al usuario el primer número y guardar en "num1"
+    Pedir al usuario el segundo número y guardar en "num2"
+    Calcular solución = num1 * num2
+    Mostrar "La solución es [solución]"
+    Esperar un momento
+    Ir a CALCULADORA
+
+DIVIDIR:
+    Limpiar pantalla
+    Mostrar "Dividir"
+    Pedir al usuario el primer número y guardar en "num1"
+    Pedir al usuario el segundo número y guardar en "num2"
+    Calcular solución = num1 / num2
+    Mostrar "La solución es [solución]"
+    Esperar un momento
+    Ir a CALCULADORA
+
+MENU:
+    Finalizar o regresar al menú principal según sea necesario
+FIN
